@@ -1,0 +1,6 @@
+title: Cookie Compliance Banner
+status: wip
+context:
+    accept-text: Accept Cookies
+    decline-text: Decline Non-essential Cookies
+    cookie-href: /cookies
