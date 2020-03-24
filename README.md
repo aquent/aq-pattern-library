@@ -8,7 +8,7 @@ To start the web UI dev server using the BrowserSync option, you can use the com
 
 `fractal start`
 
-You can reference the Fractal development guide at [https://fractal.build/guide/]
+You can reference the Fractal development guide at https://fractal.build/guide/
 
 ## Deployment
 To deploy changes and updates to GitHub Pages, you can use the command:
