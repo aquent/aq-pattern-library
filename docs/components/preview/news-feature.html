@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link media="all" rel="stylesheet" href="../../css/preview.css">
+    <link media="all" rel="stylesheet" href="https://stag.aquent.com/css/main.css">    
+    <script src="https://stag.aquent.com/js/app.js"></script>
+    <title>Preview Layout</title>
+</head>
+
+<body>
+  <div class="center-content">
+    <div class="yield">
+      <!-- Begin #dotParse("//aquent.com/velocity/patterns/card-article.vtl") -->
+<div class="card-article">
+  <figure class="aspect-16x9 bg-cover bg-pos-center" style="background-image:url('${postImg}');">
+    <figcaption class="show-for-sr">${postTitle} image</figcaption>
+  </figure>
+  
+  <div class="panel-details padding-top-1 margin-bottom-3">
+    <time class="date font-monospace padding-vertical-1 side-separator" itemprop="datePublished" datetime="${postDate}">${postDate}</time>
+    <h5 class="excerpt text-orange">${postTitle}</h5>
+    <a class="font-monospace" href="$" title="View the entire ${postTitle} post" tabindex="0">View</a>
+  </div>
+</div>
+<!-- End card-article.vtl -->
+    </div>
+  </div>
+</body>
+</html>
+
