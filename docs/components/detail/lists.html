@@ -150,11 +150,14 @@
         
         <h1 id="lists">Lists</h1>
 <p>The Aquent site supports several different types of lists, both standard, and modified. Standard lists include any markup with <code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, and <code>&lt;dl&gt;</code>.</p>
+<h2 id="bullet-coloring">Bullet coloring</h2>
+<p>For <code>&lt;ul&gt;</code> elements, bullets are either strictly <code>$orange</code> or <code>$neutral-8</code> per our color standards and SASS variables. Bullets are neutral-8 on orange backgrounds, and orange everywhere else. These colors will change automatically based on the use of acceptable wrapper classes for orange backgrounds.</p>
 <h2 id="custom-lists">Custom Lists</h2>
 <h3 id="counter-lists">Counter Lists</h3>
 <p>Counter lists use a custom, large, orange ordered counter in place of the tradition <code>list-style</code> numeral. These lists also present with an increased font size.</p>
 <h4 id="footnotes">Footnotes</h4>
 <p>To create a footnotes list, it must also be a counter list. As such, it requires a <code>counter</code> class along with the additional class: <code>footnote</code>. The primary difference is the usage of a bracket wrapper around the numeral.</p>
+<p>If a <code>&lt;ul&gt;</code> is used within a footnote element, these bullets <em>will break pattern</em> with normal bulleted lists and will display as <code>$neutral-3</code> gray.</p>
 <h4 id="no-bullet">No Bullet</h4>
 <p>Both ordered and unordered lists can have their bullet/counter removed when necessary by applying the <code>no-bullet</code> class.</p>
 
