@@ -150,11 +150,16 @@
         
         <h1 id="lists">Lists</h1>
 <p>The Aquent site supports several different types of lists, both standard, and modified. Standard lists include any markup with <code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, and <code>&lt;dl&gt;</code>.</p>
+<h2 id="bullet-coloring">Bullet coloring</h2>
+<p>For <code>&lt;ul&gt;</code> elements, bullets are either strictly <code>$orange</code> or <code>$neutral-8</code> per our color standards and SASS variables. Bullets are neutral-8 on orange backgrounds, and orange everywhere else. These colors will change automatically based on the use of acceptable wrapper classes for orange backgrounds.</p>
 <h2 id="custom-lists">Custom Lists</h2>
 <h3 id="counter-lists">Counter Lists</h3>
 <p>Counter lists use a custom, large, orange ordered counter in place of the tradition <code>list-style</code> numeral. These lists also present with an increased font size.</p>
 <h4 id="footnotes">Footnotes</h4>
 <p>To create a footnotes list, it must also be a counter list. As such, it requires a <code>counter</code> class along with the additional class: <code>footnote</code>. The primary difference is the usage of a bracket wrapper around the numeral.</p>
+<p>If a <code>&lt;ul&gt;</code> is used within a footnote element, these bullets <em>will break pattern</em> with normal bulleted lists and will display as <code>$neutral-3</code> gray.</p>
+<h4 id="no-bullet">No Bullet</h4>
+<p>Both ordered and unordered lists can have their bullet/counter removed when necessary by applying the <code>no-bullet</code> class.</p>
 
         
     </div>
@@ -177,7 +182,16 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Unordered Item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Unordered Item 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Unordered Item 4<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-orange padding-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Unordered Item on Orange BG 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Unordered Item on Orange BG 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Unordered Item on Orange BG 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Unordered Item on Orange BG 4<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -195,7 +209,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(5)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="lists--default.html">
@@ -212,6 +226,10 @@
             
                 <a href="lists--footnotes.html">
                     <span>Footnotes</span>
+                </a>, 
+            
+                <a href="lists--no-bullet.html">
+                    <span>No Bullet</span>
                 </a>
             
             </span>
@@ -346,7 +364,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -523,6 +541,30 @@
     
 
             </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="aside.html" data-pjax>
+                <span>Aside</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
         </li>
         
     
@@ -774,6 +816,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="lists--footnotes.html" data-pjax>
                 <span>Footnotes</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="lists--no-bullet.html" data-pjax>
+                <span>No Bullet</span>
                 
 
 <div class="Status Status--unlabelled">
