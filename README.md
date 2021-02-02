@@ -1,9 +1,10 @@
-# fractal-demo
+# Aquent Pattern Library
+
+## Development
 The Fractal CLI tool can be installed globally via NPM:
 
 `npm i -g @frctl/fractal`
 
-## Development
 To start the web UI dev server using the BrowserSync option, you can use the command:
 
 `fractal start`
