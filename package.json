@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@frctl/fractal": "^1.2.1",
-    "@frctl/mandelbrot": "^1.2.1",
-    "@frctl/nunjucks": "^2.0.1"
+    "@frctl/fractal": "^1.5.2",
+    "@frctl/mandelbrot": "^1.7.0",
+    "@frctl/nunjucks": "^2.0.6"
   },
   "devDependencies": {},
   "scripts": {
