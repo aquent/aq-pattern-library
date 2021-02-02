@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fienen/fractal-demo.git"
+    "url": "git+https://github.com/aquent/aq-pattern-library.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fienen/fractal-demo/issues"
+    "url": "https://github.com/aquent/aq-pattern-library/issues"
   },
-  "homepage": "https://github.com/fienen/fractal-demo#readme"
+  "homepage": "https://github.com/aquent/aq-pattern-library#readme"
 }
