@@ -10,7 +10,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "fractal:start": "fractal start --sync",
+    "fractal:build": "fractal build"
   },
   "repository": {
     "type": "git",
